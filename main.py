@@ -55,10 +55,10 @@ async def start(bot, update):
 tessdata = f"https://github.com/tesseract-ocr/tessdata/raw/main/{LANG}.traineddata"
 dirs = r"/app/vendor/tessdata"
 path = os.path.join(dirs, f"{LANG}.traineddata")
-if not os.path.exists(path):
+if not os.path.exists(C:\Program Files\Tesseract-OCR\tessdata):
     data = requests.get(tessdata, allow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})
     if data.status_code == 200:
-        open(path, "wb").write(data.content)
+        open(C:\Program Files\Tesseract-OCR\tessdata, "wb").write(data.content)
     else:
         print("Either the lang code is wrong or the lang is not supported.")
 
